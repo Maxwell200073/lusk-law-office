@@ -11,11 +11,12 @@ header {
     background-color: #3f89a6;
     width: 100%;
     /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
-    font-weight: 200;
+    font-weight: 200 !important;
     /* box-shadow: 4px 3px 8px 9px #111; */
 }
 h1 {
-    font-weight: 200;
+    font-weight: 200 !important;
+    font-size: 2rem !important;
 }
 .logo {
     width: 25%;
@@ -84,18 +85,22 @@ li:active {
     border-radius: 5px;
     top: 10%;
     font-size: 1rem;
-    padding: 0.5rem 0;
+    /* padding: 0.3rem 0; */
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: end !important;
+}
+a {
+    text-decoration: none !important;
+    color: #fff !important;
 }
 .hero-contact-top {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    padding: 5px;
+    padding: 3px;
     font-weight: 500;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -108,7 +113,7 @@ li:active {
 
 @media only screen and (max-width: 400px) {
     h1 {
-        font-size: 0.5rem;
+        font-size: 0.5rem !important;
     }
     nav li {
         font-size: 10px;
@@ -116,10 +121,10 @@ li:active {
 }
 @media only screen and (max-width: 640px) {
     h1 {
-        font-size: 1rem;
+        font-size: 1rem !important;
     }
     nav li {
-        font-size: 1rem;
+        font-size: 1rem !important;
     }
     .hero {
         background: center / contain no-repeat url("images/hero.png") #204959;
@@ -127,19 +132,19 @@ li:active {
 }
 @media only screen and (min-width: 840px) {
     .hero {
-        font-size: 2.5rem;
+        font-size: 2.5rem !important;
     }
 }
 /* reviews */
 .reviews {
     color: #fff;
     padding: 1rem;
-    height: 350px;
     text-align: center;
     background-color: #072227;
 }
 .bar {
     margin: 0 auto;
+    margin-bottom: 1rem;
     width: 30%;
     height: 3px;
     background-color: #aefeff;
@@ -152,7 +157,7 @@ li:active {
     padding: 2em;
     border-radius: 5px;
     max-width: 400px;
-    min-height: 100px;
+    min-height: 200px;
     background-color: #35858bbb;
     text-align: justify;
     font-size: 0.9rem;
@@ -177,6 +182,94 @@ li:active {
 }
 /* services */
 .services {
-    height: 600px;
+    padding: 2rem;
+    background: linear-gradient(15deg, #222, #444);
+}
+.white {
+    color: #fff;
+    text-align: center;
+}
+.accordion-button:hover {
+    color: #fff !important;
+}
+.accordion-button {
+    color: #072227 !important;
+}
+.accordion-body {
+    background-color: #0b1f26;
+    color: #fff;
+}
+.accordion-button:hover:active {
+    color: #072227 !important;
+    background: #fff;
+}
+/* map */
+.map {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    /* padding: 2rem; */
+    /* background: linear-gradient(15deg, #222, #444); */
+    box-shadow: 3px -6px 20px 5px rgb(28, 27, 27);
+}
+iframe {
+    border-radius: 10px;
+    box-shadow: 2px 5px 9px 9px #222;
+}
+/* contact */
+.contact {
+    padding: 1rem;
+    background-color: #378f96;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.contact-info {
+    /* max-width: 50%; */
+    min-width: 350px;
+    text-align: center;
+}
+.contact-form {
+    min-width: 350px;
+}
+input {
+    border-radius: 5px;
+    height: 35px;
+    width: 300px;
+    caret-color: #378f96;
+}
+input[type="text"] {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+input[type="email"],
+input[type="tel"] {
+    border-radius: 0;
+}
+
+textarea {
+    width: 300px;
+    resize: none;
+    border: -2px solid;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+button {
+    color: #fff;
+    background-color: #072227;
+    cursor: pointer;
+    padding: 0.5em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+}
+button:hover {
+    background-color: #124d57;
+    transform: scale(1.05);
+    transition: ease-in-out 200ms;
 }
