@@ -19,22 +19,23 @@ h1 {
     font-size: 2rem !important;
 }
 .logo {
-    width: 25%;
-    height: 25%;
-    max-width: 40px;
-    margin-right: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    /* margin-right: 10px; */
 }
 .logo img {
     width: 100%;
     height: 100%;
 }
 .headerContent {
-    padding: 20px;
+    padding: 20px 10px 0;
     display: flex;
     background-color: #0b1f26;
     /* box-shadow: 5px 5px 8px 9px #111; */
 }
 nav {
+    margin-top: 20px;
     margin-left: auto;
 }
 nav ul {
@@ -180,6 +181,51 @@ a {
     margin: 3px 0;
     color: #ffbd59;
 }
+/* about */
+.about {
+    /* background: linear-gradient(#2d6b6f, #378f96); */
+    background-color: #378f96;
+    box-shadow: inset 3px 8px 10px 1px rgba(50, 49, 49, 0.841);
+    padding: 2rem;
+
+    /* background-color: #378f96; */
+}
+.center {
+    text-align: center;
+}
+.about-wrapper {
+    max-width: 900px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 0 auto;
+}
+.about-img {
+    max-width: 50%;
+    max-height: 50%;
+    /* width: 350px;
+    height: auto; */
+}
+.about-img img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.about-text {
+    font-weight: 500;
+}
+.about a {
+    max-width: 300px;
+    max-height: 200px;
+    padding: 0.7em;
+    border-radius: 5px;
+    background-color: #ffbd59;
+    color: #fff;
+}
+.about a:hover {
+    background-color: #ffbd59b1;
+    transition: 0.3s;
+}
 /* services */
 .services {
     padding: 2rem;
@@ -272,4 +318,10 @@ button:hover {
     background-color: #124d57;
     transform: scale(1.05);
     transition: ease-in-out 200ms;
+}
+/* footer */
+.footer {
+    padding: 1rem;
+    background-color: #252525;
+    color: #fff;
 }
